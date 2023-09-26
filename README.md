@@ -63,7 +63,7 @@ Before you can run the project, ensure that you have the following prerequisites
     Change your current directory to the project's root directory:
 
     ```bash
-    cd zoo-higijena-dog-adoption-app
+    cd zoo-higijena
     ```
 
 3. **Install Dependencies:**
