@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App style={{ background: 'linear-gradient(to right, #74ebd5, #ACB6E5)' }}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

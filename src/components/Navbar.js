@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav, Button, NavDropdown } from "react-bootstrap";
 import AuthContext from "../context/AuthContext";
+
 
 const NavbarComponent = () => {
   const { user, logout } = useContext(AuthContext);
@@ -16,9 +17,9 @@ const NavbarComponent = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="my-0">
       <Navbar.Brand as={Link} to="/">
-      <img
+        <img
           src="/logo.png"
           alt="Logo"
           width="155"
@@ -29,21 +30,29 @@ const NavbarComponent = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">
-            Home
-          </Nav.Link>
-          <Nav.Link as={Link} to="/about">
-            About
+          <NavDropdown title="Aktivnosti" id="basic-nav-dropdown" style={{ fontSize: "20px" }}>
+            <NavDropdown.Item as={Link} to="/udomljavanje">
+              Udomljavanje
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/lecenje">
+              Lečenje
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/obelezavanje">
+              Obeležavanje
+            </NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link as={Link} to="/about" style={{ fontSize: "20px" }}>
+            O nama
           </Nav.Link>
         </Nav>
-        <Nav>
+        <Nav className="ml-auto">
           {user ? (
-            <Button variant="outline-danger" onClick={handleSignOut}>
-              Sign Out
+            <Button variant="outline-danger" onClick={handleSignOut} className="mx-2" style={{ fontSize: "20px" }}>
+              Odjava
             </Button>
           ) : (
-            <Nav.Link as={Link} to="/login">
-              Login
+            <Nav.Link as={Link} to="/login" className="btn btn-success mx-2" style={{ fontSize: "20px" }}>
+              Prijava
             </Nav.Link>
           )}
         </Nav>
