@@ -40,6 +40,60 @@ We welcome contributions from developers and volunteers passionate about dog ado
 
 This project is licensed under the [MIT License](LICENSE).
 
+## Prerequisites
+
+Before you can run the project, ensure that you have the following prerequisites installed on your system:
+
+- **Node.js**: You'll need Node.js to run JavaScript and the required npm packages.
+
+## Getting Started
+
+1. **Clone the Repository:**
+
+    Clone the Zoo Higijena Dog Adoption Web App repository to your local machine using Git:
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+    Replace `<repository-url>` with the URL of the Git repository.
+
+2. **Navigate to the Project Directory:**
+
+    Change your current directory to the project's root directory:
+
+    ```bash
+    cd zoo-higijena
+    ```
+
+3. **Install Dependencies:**
+
+    Use npm (Node Package Manager) to install the project dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    This command will download and install all the required packages and libraries.
+
+4. **Run the Application:**
+
+    Once the dependencies are installed, you can start the application with the following command:
+
+    ```bash
+    npm start
+    ```
+
+    This command will start the development server and open the web app in your default web browser.
+
+## Using the Application
+
+- Access the web application by opening your web browser and navigating to http://localhost:3000.
+
+- You will be able to register an account, log in, and explore the dog adoption listings.
+
+- If you are an administrator or have appropriate permissions, you can add, edit, or remove dog adoption listings.
+
 ## Acknowledgments
 
 We extend our thanks to all contributors, supporters, and the open-source community for making this project possible.
