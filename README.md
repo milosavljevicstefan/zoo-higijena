@@ -94,7 +94,6 @@ Before you can run the project, ensure that you have the following prerequisites
 
 - If you are an administrator or have appropriate permissions, you can add, edit, or remove dog adoption listings.
 
-
 ## Acknowledgments
 
 We extend our thanks to all contributors, supporters, and the open-source community for making this project possible.
